@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fnafquiz.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Label text="FNaF Song Quiz" underline="true" />
+   <Label fx:id="category" text="Category:" />
+   <Label fx:id="song" text="Song #" />
+   <Label fx:id="lyrics" text="&quot;FNaF Song Lyrics&quot;" wrapText="true" />
+   <Label fx:id="question2" text="What song does this come from?" wrapText="true" />
+   <ChoiceBox fx:id="choices" prefWidth="150.0" />
+    <Button onAction="#onSubmitButtonClick" text="Submit!" />
+   <Button fx:id="nextQuestion" mnemonicParsing="false" onAction="#onQuestionButtonClick" text="Click to Get a Song" />
+</VBox>
